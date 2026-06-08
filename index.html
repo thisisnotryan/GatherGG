@@ -68,8 +68,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--fb);min-height:100
 .hero{margin:0 18px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;cursor:pointer;transition:border-color .18s;}
 .hero:active{border-color:rgba(108,99,255,.5);}
 .hero-bg{height:170px;display:flex;align-items:center;justify-content:center;position:relative;}
-.hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 20%,rgba(10,10,15,.95));}
-.hero-txt{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 25%,rgba(10,10,15,.55) 55%,rgba(10,10,15,.96) 82%);z-index:1;}
+.hero-txt{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;z-index:2;}
 .hlabel{font-size:10px;font-weight:700;font-family:var(--fd);letter-spacing:.15em;color:var(--accent);margin-bottom:3px;}
 .htitle{font-family:var(--fd);font-size:20px;font-weight:700;letter-spacing:.03em;line-height:1.1;margin-bottom:5px;}
 .hmeta{display:flex;gap:12px;font-size:12px;color:var(--text2);}
@@ -390,7 +390,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
       <div class="pill on" onclick="setFilter(this,'all')">🎮 All</div><div class="pill off" onclick="setFilter(this,'board')">🎲 Board</div><div class="pill off" onclick="setFilter(this,'switch')">🕹️ Switch</div><div class="pill off" onclick="setFilter(this,'ps5')">🖥️ PS5</div><div class="pill off" onclick="setFilter(this,'lan')">🌐 LAN</div><div class="pill off" onclick="setFilter(this,'lego')">🧱 Lego</div><div class="pill off" onclick="setFilter(this,'racing')">🏎️ Racing</div><div class="pill off" onclick="setFilter(this,'xbox')">🎮 Xbox</div>
     </div>
     <div class="hero" id="hero-event" onclick="openEvent('lan')">
-      <div class="hero-bg" style="background:#0d0d1a;height:165px;"><div class="hero-ov"></div><span style="font-size:76px;position:relative;z-index:1;filter:drop-shadow(0 0 18px rgba(108,99,255,.8));">🌐</span>
+      <div class="hero-bg" style="background:#0d0d1a;height:165px;"><div class="hero-ov"></div><span style="font-size:54px;position:relative;z-index:1;align-self:flex-start;margin-top:14px;filter:drop-shadow(0 0 18px rgba(108,99,255,.8));">🌐</span>
         <div class="hero-txt"><div class="hlabel">⚡ TONIGHT · FEATURED</div><div class="htitle">Tampines LAN Party<br>Season 3</div><div class="hmeta"><span>📍 0.8km</span><span>👾 14/20</span><span>🕗 7:00 PM</span></div></div>
       </div>
     </div>
